@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "@atproto/api": "^0.16.2",
+    "telegraf": "^4.16.3",
+    "ts-node": "^10.9.2"
+  },
+  "name": "bluesky-telegram-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/main.js",
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "axios": "^1.11.0",
+    "dotenv": "^17.2.1",
+    "nodemon": "^3.1.10",
+    "typescript": "^5.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "node --loader ts-node/esm/transpile-only src/main.ts",
+    "start": "node build/main.js",
+    "watch": "nodemon --exec npm run dev --watch src --ext ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabsfrmarqs/bluesky-telegram-integration.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/gabsfrmarqs/bluesky-telegram-integration/issues"
+  },
+  "homepage": "https://github.com/gabsfrmarqs/bluesky-telegram-integration#readme"
+}
