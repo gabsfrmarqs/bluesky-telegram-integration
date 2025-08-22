@@ -83,10 +83,10 @@ export const setupCommands = (bot: Telegraf) => {
         const blob = response.data.blob;
         const text = caption.split(" ").slice(1).join(" ");
         ctx.reply("Just posted: " + text);
-        ctx.replyWithPhoto({
-          source: path,
-          caption: "This is EMU OTORI!!",
-        });
+        ctx.replyWithPhoto(
+          { source: fs.readFileSync(path) },
+          { caption: "This is EMU OTORI!!" }
+        );
 
         await BskyConnection.agent.post({
         text: text,

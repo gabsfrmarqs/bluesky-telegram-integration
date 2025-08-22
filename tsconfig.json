@@ -12,7 +12,9 @@
     "emitDecoratorMetadata": false,
 
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "allowImportingTsExtensions": true
   },
   "include": ["src"],
   "exclude": ["build", "node_modules"]
